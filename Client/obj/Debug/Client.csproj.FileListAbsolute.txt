@@ -1,0 +1,6 @@
+C:\Users\asdf\source\repos\MySharp\SharpmsSqlC2\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\asdf\source\repos\MySharp\SharpmsSqlC2\Client\bin\Debug\Client.exe
+C:\Users\asdf\source\repos\MySharp\SharpmsSqlC2\Client\bin\Debug\Client.pdb
+C:\Users\asdf\source\repos\MySharp\SharpmsSqlC2\Client\obj\Debug\Client.csproj.Fody.CopyLocal.cache
+C:\Users\asdf\source\repos\MySharp\SharpmsSqlC2\Client\obj\Debug\Client.exe
+C:\Users\asdf\source\repos\MySharp\SharpmsSqlC2\Client\obj\Debug\Client.pdb

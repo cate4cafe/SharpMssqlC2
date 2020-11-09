@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D8C9D67-89D7-43BB-BA3F-8E2C84A5DF75}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SharpMssqlC2</RootNamespace>
+    <AssemblyName>SharpMssqlC2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client\DATABASE.cs" />
+    <Compile Include="Client\inject.cs" />
+    <Compile Include="Client\obj\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.cs" />
+    <Compile Include="Client\options.cs" />
+    <Compile Include="Client\Program.cs" />
+    <Compile Include="Client\Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server\AES.cs" />
+    <Compile Include="Server\DATABASE.cs" />
+    <Compile Include="Server\ExternalC2\BeaconId.cs" />
+    <Compile Include="Server\ExternalC2\Channels\BeaconChannel.cs" />
+    <Compile Include="Server\ExternalC2\Channels\SocketChannel.cs" />
+    <Compile Include="Server\ExternalC2\Connectors\BaseConnector.cs" />
+    <Compile Include="Server\ExternalC2\Connectors\BeaconConnector.cs" />
+    <Compile Include="Server\ExternalC2\Connectors\SocketConnector.cs" />
+    <Compile Include="Server\ExternalC2\Frames\FrameType.cs" />
+    <Compile Include="Server\ExternalC2\Frames\WebSocketFrame.cs" />
+    <Compile Include="Server\ExternalC2\Interfaces\IC2Channel.cs" />
+    <Compile Include="Server\ExternalC2\Interfaces\IC2Connector.cs" />
+    <Compile Include="Server\ExternalC2\SocketC2.cs" />
+    <Compile Include="Server\obj\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.cs" />
+    <Compile Include="Server\options.cs" />
+    <Compile Include="Server\Program.cs" />
+    <Compile Include="Server\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Server\Server.csproj">
+      <Project>{b30e6586-a19a-44e6-8183-262db62a228a}</Project>
+      <Name>Server</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Client\bin\Debug\Client.exe" />
+    <Content Include="Client\bin\Debug\Client.pdb" />
+    <Content Include="Client\Client.csproj.user" />
+    <Content Include="Client\FodyWeavers.xml" />
+    <Content Include="Client\obj\Debug\Client.csproj.FileListAbsolute.txt" />
+    <Content Include="Client\obj\Debug\Client.exe" />
+    <Content Include="Client\obj\Debug\Client.pdb" />
+    <Content Include="Server\bin\Debug\Server.exe" />
+    <Content Include="Server\bin\Debug\Server.pdb" />
+    <Content Include="Server\FodyWeavers.xml" />
+    <Content Include="Server\obj\Debug\Server.csproj.FileListAbsolute.txt" />
+    <Content Include="Server\obj\Debug\Server.exe" />
+    <Content Include="Server\obj\Debug\Server.pdb" />
+    <Content Include="Server\Server.csproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Client\Client.csproj" />
+    <None Include="Client\FodyWeavers.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Client\obj\Debug\Client.csproj.CoreCompileInputs.cache" />
+    <None Include="Client\obj\Debug\Client.csproj.Fody.CopyLocal.cache" />
+    <None Include="Client\obj\Debug\Costura\4E5B85723CF0210C3FB80F65926B818E61537475.costura.server.exe.compressed" />
+    <None Include="Client\obj\Debug\Costura\5954E332EC7732BA34C27E2D88D154D1919C1B07.costura.costura.dll.compressed" />
+    <None Include="Client\obj\Debug\Costura\6AFAF1C5DEB4625FE37A9082AB2345C5BD0A85DA.costura.server.exe.compressed" />
+    <None Include="Client\obj\Debug\Costura\DAD50439638F77E80A3E2EAE18FCAD30A70AFF77.costura.server.pdb.compressed" />
+    <None Include="Client\obj\Debug\Costura\EF8C68D895B32357E53DF0DDC5E96059DBA8EFC2.costura.server.pdb.compressed" />
+    <None Include="Client\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Client\packages.config" />
+    <None Include="Server\FodyWeavers.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Server\obj\Debug\Costura\5954E332EC7732BA34C27E2D88D154D1919C1B07.costura.costura.dll.compressed" />
+    <None Include="Server\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Server\obj\Debug\Server.csproj.CoreCompileInputs.cache" />
+    <None Include="Server\obj\Debug\Server.csproj.Fody.CopyLocal.cache" />
+    <None Include="Server\packages.config" />
+    <None Include="Server\Server.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Client\bin\Release\" />
+    <Folder Include="Client\obj\Debug\TempPE\" />
+    <Folder Include="Server\bin\Release\" />
+    <Folder Include="Server\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

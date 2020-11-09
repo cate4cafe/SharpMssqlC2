@@ -1,0 +1,9 @@
+C:\Users\asdf\source\repos\MySharp\SharpMssqlC2\bin\Debug\SharpMssqlC2.exe
+C:\Users\asdf\source\repos\MySharp\SharpMssqlC2\bin\Debug\SharpMssqlC2.pdb
+C:\Users\asdf\source\repos\MySharp\SharpMssqlC2\obj\Debug\SharpMssqlC2.csprojAssemblyReference.cache
+C:\Users\asdf\source\repos\MySharp\SharpMssqlC2\obj\Debug\SharpMssqlC2.csproj.CoreCompileInputs.cache
+C:\Users\asdf\source\repos\MySharp\SharpMssqlC2\obj\Debug\SharpMssqlC2.exe
+C:\Users\asdf\source\repos\MySharp\SharpMssqlC2\obj\Debug\SharpMssqlC2.pdb
+C:\Users\asdf\source\repos\MySharp\SharpMssqlC2\bin\Debug\Server.exe
+C:\Users\asdf\source\repos\MySharp\SharpMssqlC2\bin\Debug\Server.pdb
+C:\Users\asdf\source\repos\MySharp\SharpMssqlC2\obj\Debug\SharpMssqlC2.csproj.CopyComplete
