@@ -14,7 +14,7 @@ namespace Server
         internal static string dbname = "MssqlC2";
         internal static string table_server = "table_server";
         internal static string table_client = "table_client";
-        internal static string c2ip = "66.42.38.174";
+        internal static string c2ip = "xx.xx.xx.xx";
         internal static string c2port = "60050";
         internal static string pipe_name = "mssqlc2";
         internal static byte[] data = Encoding.ASCII.GetBytes("");
